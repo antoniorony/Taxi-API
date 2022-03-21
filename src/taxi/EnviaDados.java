@@ -24,8 +24,7 @@ public class EnviaDados {
     
     public void envia(String numeroServico, String ganhoViagem, String tempo, String distancia, String valorCorrida, String descontoCorrida, String horarioSolicitacao, String dataFechamento,String valorSomadoSemana,String motorista, String idMotoristaSistema, String email){
        try {
-       URL url = new URL("http://projetos.tecinova.tech/Taxi/emvia.php");
-       //URL url = new URL("http://localhost:8089/trabalhos/SISTEMA%20TAXIS/admin/envia.php");
+       URL url = new URL("http://localhost:8089/Taxi/emvia.php");
        HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setDoOutput(true);
         con.setRequestMethod("POST");
